@@ -1,38 +1,26 @@
-<html><head><meta charset="utf-16">
-    <link rel="icon" href="icon.jpg">
-</head><body class="all" background="image.png" link="white" alink="white" vlink="white">
-
+<meta charset="utf-16">
+<body class="all" background="image.png">
+<html>
 <title>
 KilledKingFireWolf
 </title>
 <header>
-    
+    <body link="white" alink="white" vlink="white">
         <lu>
         <h1 style="color: white;">
             <strong>
             KilledKingFireWolf
-        </strong>
-    </h1>
-        <strong>
-    <span title="Subscribe to me! :)">
+        </h1>
     <li class="a"><a href="https://www.youtube.hu/c/KilledKingFireWolf"> Csatorna </a></li>
-    </span>
-    <span title="Szipu weboldala">
     <li class="b"><a href="https://szipuslinkek.repl.co/dark/">SzipusLinkek</a></li>
-    </span>
-    <span title="Domcraft weboldala">
     <li class="a"><a href="https://www.dommapweb.tk/">DomMapWeb</a></li>
-    </span>
     </strong>
 </lu>
-
+</body>
 </header>
 <br>	
 <b>
-</b>
-<div>
 <div class="leiras">
-<b>
 <dd>Amiket szeretek:</dd>
 <ul>
 <dd>-Minecraft</dd>
@@ -55,36 +43,12 @@ KilledKingFireWolf
 </ul>
 </b>
 </div>
-<iframe class="latestVideoEmbed" vnum="0" cid="UCr8-tfaJx9GsNzSfYRz8ALg" width="600" height="340" frameborder="0" allowfullscreen="" src="https://youtube.com/embed/7WOVd44inwQ?controls=0&amp;autoplay=1" style="float: right; padding: 0px 5px;"></iframe>
-    </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
-function loadVideo(iframe) {
-  $.getJSON(reqURL + iframe.getAttribute('cid'),
-    function(data) {
-      var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
-      console.log(videoNumber);
-      var link = data.items[videoNumber].link;
-      id = link.substr(link.indexOf("=") + 1);
-      iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
-    }
-  );
-}
-var iframes = document.getElementsByClassName('latestVideoEmbed');
-for (var i = 0, len = iframes.length; i < len; i++) {
-  loadVideo(iframes[i]);
-}
-</script>
-
-
+</head>
 <style>
     header {
-    background:  linear-gradient(1deg, rgb(15, 15, 15), rgb(66, 66, 66), black);
-    width: 103%;
-    margin: 20px -95%;
-    transition: 2s;
-    border-radius: 10px;
+    background-color:rgb(54, 54, 54);
+    width: 100%;
+    margin: 20px 5px;
     }
     lu {
         display: inline-block;
@@ -93,14 +57,11 @@ for (var i = 0, len = iframes.length; i < len; i++) {
     li.a {
         display: inline-block;
         padding: 30px 30px;
-        transition: 1s;
     }
     li.b {
         display: inline-block;
         padding: 30px 5px;
-        transition: 1s;
     }
-    li.b:hover, li.a:hover{transform: scaleX(1.075);}
     h1 {
         float: left;
         transition: 1s;
@@ -113,22 +74,6 @@ for (var i = 0, len = iframes.length; i < len; i++) {
         background-attachment: fixed;
         height: 90%;
         width: 97%;
-        transition: 2s;
-    }
-    body.all:hover {
-        transform: translateX(1.25%);
-    }
-    div.leiras {
-    height:400;
-    width:300;
-    float: left;}
-
-    iframe {
-        float: left;
-        border-radius:25px;
-    }
-    header:hover {
-        margin: 20px -25px;
     }
     </style>
-</body></html>
+</html>
